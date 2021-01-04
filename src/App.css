@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+.parent {
+  width: 100%;
+  overflow: hidden;
+  /* margin: 20px; */
+  padding: 1rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
+.tab-list {
+  display: none;
+}
+
+.slider-container {
+  /* if you want to have a scrollbar, you can add overflow here */
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 0px 0px;
+  padding: 3px;
+
+  /* scroll-behavior: smooth; */
+}
+
+.slider-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.btn-slider {
+  position: absolute;
+  border: none;
+  box-shadow: 0 0 6.1px 0.9px grey;
+  padding: 10px 0 0 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: #0b528a;
+  text-align: center;
+  color: white;
+
+  border-radius: 50%;
+  margin: 20px
+}
+
+.prev {
+  left: 1rem;
+  margin-right: 20px;
+  bottom: 2.5rem;
+}
+
+.next {
+  right: 1rem;
+  margin-left: 20px;
+  bottom: 2.5rem;
+}
+
+.disable {
+  opacity: 0.5;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.child {
+  padding: 5px 20px;
+  background: #59eb97;
+  text-align: center;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 21px;
 }
